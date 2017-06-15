@@ -1,0 +1,14 @@
+{
+  "name": "xsd-viewer",
+  "version": "1.0",
+  "author": "Joel Dumas",
+  "license": "MIT",
+
+  "devDependencies": {
+    "typescript": "^2.3.4"
+  },
+
+  "dependencies": {
+
+  }
+}

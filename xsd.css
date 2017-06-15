@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  display: flex;
+}
+
+.xsd-element {
+  border: solid 1px #999;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.25);
+  display: flex;
+  margin: 6px -2em 6px 8px;
+}
+
+.xsd-element .xsd-gutter {
+  background: #dfd;
+}
+
+.xsd-element .xsd-gutter::before {
+  content: url(icons/element.svg);
+  height: 1.2em;
+  width: 1.2em;
+  display: block;
+}
+
+.xsd-gutter {
+  border-radius: 4px 0 0 4px;
+  padding: 4px 8px 0 8px;
+  width: 1.2em;
+  overflow: hidden;
+}
+
+.xsd-content {
+  display: none;
+  text-transform: capitalize;
+  color: rgba(46, 184, 46, 1);
+  transform: rotate(90deg);
+  transform-origin: left bottom 0px;
+}
+
+.xsd-expanded > .xsd-gutter > .xsd-content {
+  display: inline-block;
+}
+
+.xsd-main {
+  flex-grow: 1;
+}
+
+.xsd-header {
+  display: flex;
+  padding: 4px 8px;
+}
+
+.xsd-name {
+  flex-grow: 1;
+  font-weight: 600;
+}
+
+.xsd-expandable .xsd-header:hover {
+  background: #eff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.xsd-type {
+  color: #999;
+  font-style: italic;
+  font-weight: 300;
+  margin-left: 24px;
+}
+
+.xsd-optional {
+  border-style: dashed;
+}
+
+.xsd-occurs {
+  color: #999;
+  font-weight: 300;
+  margin-left: 8px;
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outFile": "dist/main.js",
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "files": [
+    "src/xml.ts",
+    "src/print.ts",
+    "src/main.ts"
+  ]
+}
